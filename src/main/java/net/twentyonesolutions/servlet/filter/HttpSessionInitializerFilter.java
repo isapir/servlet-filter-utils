@@ -68,6 +68,8 @@ public class HttpSessionInitializerFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
         ((HttpServletRequest)request).getSession();     // initialize the HttpSession
+
+        chain.doFilter(request, response);
     }
 
     /**
