@@ -260,6 +260,8 @@ public class RereadableServletRequest extends HttpServletRequestWrapper {
                     }
                     else {
                         this.params.add(fileItem.getFieldName(), fileItem);
+//                        System.out.println(">>>> " + fileItem.getFieldName());
+//                        System.out.println(">>>> " + fileItem);
                     }
                 }
             }
